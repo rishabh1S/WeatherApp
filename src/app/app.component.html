@@ -4,11 +4,9 @@
   </form>
 </div>
 
-
-
-<div class="container" *ngIf="weatherData">
+<div class="container">
   <div class="upper-data">
-    <img src="../assets/day-time.jpg" alt="day-time" *ngIf="isDay == 1">
+    <img src="../assets/day-time.jpg" alt="day-time" *ngIf="isDay == 1 || isDay == undefined">
     <img src="../assets/night-time.jpg" alt="night-time" *ngIf="isDay == 0">
     <div class="weather-data">
       <div class="location">{{location}}</div>
@@ -60,7 +58,6 @@
           {{windSpeed}} km/h
         </div>
       </div>
-
     </div>
   </div>
 </div>
